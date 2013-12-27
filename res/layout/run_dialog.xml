@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/listSeparatorTextViewStyle"    
+        android:text="@string/name_of_tonight_text"      
+        android:textColor="#99660033"  
+        />
+    <EditText 
+        android:id="@+id/run_dialog_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/run_dialog_hint"
+        />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/listSeparatorTextViewStyle"    
+        android:text="@string/frequency_text"  
+        android:textColor="#99660033"       
+        />
+    
+    <RadioGroup
+        android:id="@+id/durationPreference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RadioButton 
+            android:id="@+id/interval_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/interval_5"
+            />
+        <RadioButton
+            android:id="@+id/interval_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/interval_10"
+            />
+        <RadioButton
+            android:id="@+id/interval_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/interval_20"
+            />
+        <RadioButton
+            android:id="@+id/interval_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/interval_30"
+            />
+    </RadioGroup>
+    
+
+</LinearLayout>

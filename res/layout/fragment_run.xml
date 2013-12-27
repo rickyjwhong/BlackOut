@@ -1,0 +1,151 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    >      
+        
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:orientation="vertical"
+        
+        >
+        <LinearLayout
+       	    android:id="@+id/titleContainer"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="5sp"
+            android:padding="10sp"
+            android:background="#99CC6600"
+            android:layout_alignParentBottom="true"
+            >
+	        <TextView
+	            android:id="@+id/run_title"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="center|center"
+	            android:textSize="16sp"
+	            android:textStyle="bold"
+	            />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/titleContainer"
+            android:gravity="center|center"
+            >
+            <Button
+		        android:id="@+id/toggleButton"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:layout_gravity="center|center"
+		        android:textSize="14sp"
+		        android:textColor="#E6E6B8"
+		        android:gravity="center|center"
+		        android:background="#99660033"
+				android:paddingTop="30sp"
+				android:paddingBottom="30sp"
+		        android:paddingLeft="50sp"
+		        android:paddingRight="50sp"
+		        />
+        </LinearLayout>
+        	
+    </RelativeLayout>
+    
+    
+    
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:fillViewport="true"
+        >
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        >	        
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        >
+		        <TextView
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            style="?android:attr/listSeparatorTextViewStyle"    
+		            android:text="@string/last_location_detail_text"        
+		            />
+		        <TableLayout
+		            android:orientation="vertical"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_margin="10dp"
+		            >
+		            <TableRow>
+		                <TextView
+		                    style="@style/LastLocationDetailTitle"
+				            android:text="@string/time" />
+		                <TextView
+		                    android:id="@+id/ll_time"
+		                    style="@style/LastLocationDetailText" />
+		            </TableRow>
+		            <TableRow>
+		                <TextView
+		                    style="@style/LastLocationDetailTitle"
+				            android:text="@string/latitude"  />
+		                <TextView
+		                    android:id="@+id/ll_latitude"
+		                    style="@style/LastLocationDetailText" />
+		            </TableRow>
+		            <TableRow>
+		                <TextView
+		                    style="@style/LastLocationDetailTitle"
+				            android:text="@string/longitude"  />
+		                <TextView
+		                    android:id="@+id/ll_longitude"
+		                    style="@style/LastLocationDetailText" />
+		            </TableRow>
+		            <TableRow>
+		                <TextView
+		                    style="@style/LastLocationDetailTitle"
+				            android:text="@string/altitude"   />
+		                <TextView
+		                    android:id="@+id/ll_altitude"
+		                    style="@style/LastLocationDetailText" />
+		            </TableRow>            
+		        </TableLayout>        
+		    </LinearLayout>
+		    
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        >
+		        <TextView
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            style="?android:attr/listSeparatorTextViewStyle"    
+		            android:text="@string/all_location_detail_text"        
+		            />	        
+		        <TableLayout 
+		            android:id="@+id/all_location_table"
+		            android:orientation="vertical"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_margin="10dp"
+		            >    
+		            
+		        </TableLayout>   
+		        
+		    </LinearLayout>  
+	        
+	    </LinearLayout>   
+    </ScrollView>
+</LinearLayout>
