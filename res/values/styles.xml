@@ -1,10 +1,7 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!--
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    -->
-    <style name="AppBaseTheme" parent="android:Theme.Light">
+    
+   <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
@@ -20,7 +17,7 @@
     <style name="LastLocationDetailTitle">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>\
-        <item name="android:layout_weight">50</item>
+        <item name="android:layout_weight">30</item>
         <item name="android:gravity">right</item>
         <item name="android:paddingRight">10sp</item>
         <item name="android:textColor">@android:color/darker_gray</item>
@@ -28,9 +25,10 @@
     <style name="LastLocationDetailText">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>\
-        <item name="android:layout_weight">50</item>
+        <item name="android:layout_weight">70</item>
         <item name="android:gravity">left</item>
         <item name="android:paddingLeft">10sp</item>
     </style>
+    
 
 </resources>

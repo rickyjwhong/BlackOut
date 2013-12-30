@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="CustomActionBarTheme"
+           parent="@style/AppBaseTheme">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="MyActionBar"
+           parent="@style/AppBaseTheme">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    
+</resources>

@@ -9,28 +9,41 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="50"
-        android:orientation="vertical"
-        
+        android:layout_weight="70"
+        android:orientation="vertical"        
         >
         <LinearLayout
        	    android:id="@+id/titleContainer"
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:layout_margin="5sp"
-            android:padding="10sp"
-            android:background="#99CC6600"
+            android:padding="5sp"            
             android:layout_alignParentBottom="true"
             >
 	        <TextView
 	            android:id="@+id/run_title"
-	            android:layout_width="match_parent"
-	            android:layout_height="wrap_content"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
 	            android:gravity="center|center"
-	            android:textSize="16sp"
+	            android:layout_gravity="center|center"
+	            android:textSize="18sp"
 	            android:textStyle="bold"
+	            android:layout_weight="7"
+	            android:textColor="@color/titleText"
+	            android:background="@color/dark_gray_transparent"
 	            />
+	        <Button
+		        android:id="@+id/toggleButton"
+		        android:layout_height="match_parent"
+		        android:layout_width="0dp"
+		        android:layout_weight="3"
+		        android:layout_gravity="center|center"
+		        android:textSize="14sp"
+		        android:textColor="#E6E6B8"
+		        android:gravity="center|center"
+		        android:background="#99660033"
+		        />
         </LinearLayout>
         
         <LinearLayout
@@ -39,20 +52,11 @@
             android:layout_above="@id/titleContainer"
             android:gravity="center|center"
             >
-            <Button
-		        android:id="@+id/toggleButton"
-		        android:layout_height="wrap_content"
-		        android:layout_width="wrap_content"
-		        android:layout_gravity="center|center"
-		        android:textSize="14sp"
-		        android:textColor="#E6E6B8"
-		        android:gravity="center|center"
-		        android:background="#99660033"
-				android:paddingTop="30sp"
-				android:paddingBottom="30sp"
-		        android:paddingLeft="50sp"
-		        android:paddingRight="50sp"
-		        />
+            <FrameLayout
+                android:id="@+id/mapFragmentContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
         </LinearLayout>
         	
     </RelativeLayout>
@@ -99,27 +103,28 @@
 		            <TableRow>
 		                <TextView
 		                    style="@style/LastLocationDetailTitle"
-				            android:text="@string/latitude"  />
+				            android:text="@string/duration" />
 		                <TextView
-		                    android:id="@+id/ll_latitude"
+		                    android:id="@+id/ll_duration"
 		                    style="@style/LastLocationDetailText" />
 		            </TableRow>
 		            <TableRow>
 		                <TextView
 		                    style="@style/LastLocationDetailTitle"
-				            android:text="@string/longitude"  />
+				            android:text="@string/lat_lon_alt"  />
 		                <TextView
-		                    android:id="@+id/ll_longitude"
+		                    android:id="@+id/ll_lat_lon_alt"
 		                    style="@style/LastLocationDetailText" />
-		            </TableRow>
+		            </TableRow>	            
 		            <TableRow>
 		                <TextView
 		                    style="@style/LastLocationDetailTitle"
-				            android:text="@string/altitude"   />
+				            android:text="@string/last_known_location_text"   />
 		                <TextView
-		                    android:id="@+id/ll_altitude"
+		                    android:id="@+id/ll_known_location"
 		                    style="@style/LastLocationDetailText" />
-		            </TableRow>            
+		            </TableRow> 
+		                     
 		        </TableLayout>        
 		    </LinearLayout>
 		    

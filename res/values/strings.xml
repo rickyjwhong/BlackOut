@@ -10,18 +10,26 @@
 	<string name="last_location_detail_text">Last Location Detail</string>
 	<string name="all_location_detail_text">All Location Detail</string>
 	<string name="time">Time</string>
-	<string name="latitude">Latidude</string>
-	<string name="longitude">Longitude</string>
-	<string name="altitude">Altitude</string>
+	<string name="latitude">Lat</string>
+	<string name="longitude">Lon</string>
+	<string name="altitude">Alt</string>
+	<string name="lat_lon_alt">Lat | Lon | Alt</string>
+	<string name="duration">Duration</string>
 	<string name="gps_disabled">GPS is disabled</string>
 	<string name="gps_enabled">GPS is enabled</string>
 	<string name="run_dialog_hint">Name of your Night</string>
-	<string name="interval_5">5 Min</string>
-	<string name="interval_10">10 Min</string>
-	<string name="interval_20">20 Min (Suggested)</string>
-	<string name="interval_30">30 Min </string>
+	<string name="interval_5">5</string>
+	<string name="interval_10">10</string>
+	<string name="interval_20">20 (Suggested)</string>
+	<string name="interval_30">30</string>
 	<string name="name_of_tonight_text">Title for Tonight</string>
-	<string name="frequency_text">Location Update Frequency</string>
+	<string name="frequency_text">Location Update Frequency (Min)</string>
 	<string name="run_dialog_title">Just a few things</string>
 	<string name="menu_list">Previous Nights</string>
+	<string name="menu_add">Start New</string>
+	<string name="location_unknown">Location Unknown</string>
+	<string name="last_known_location_text">Last Location</string>
+	<string name="blackout_current">Blacking Out&#8230;</string>
+	<string name="have_fun_message">Running in the Background. <br/> Go and Have Fun!</string>
+	
 </resources>
